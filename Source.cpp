@@ -7,6 +7,12 @@
 #include <unordered_set>
 #include <future>
 
+// NOTE:
+// This program uses std::async because of reasons. In this particular 
+// use case it most likely just adds needless overhead if the implementation 
+// actually does create new threads. So consider removing the async code if 
+// you do plan to use this for anything.
+
 std::string GetActiveWindowTitle()
 {
 	HWND hwnd = GetForegroundWindow();
