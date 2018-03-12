@@ -7,6 +7,9 @@
 #include <unordered_set>
 #include <future>
 
+// The following was inspired by XtremePrime's vlc-title-grabber, be sure
+// to check him out https://github.com/XtremePrime/
+
 // NOTE:
 // This program uses std::async because of reasons. In this particular 
 // use case it most likely just adds needless overhead if the implementation 
