@@ -63,10 +63,8 @@ int main()
 			
 			fut = std::async(std::launch::async, [&] {
 				out.open("titles.txt", std::ios::app);
-
 				out << title << std::endl;
 				title_set.insert(title);
-
 				out.close();
 			});
 		}
